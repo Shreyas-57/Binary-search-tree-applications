@@ -1,13 +1,13 @@
 ## Application of Trees (Binary Search Tree)
 
-### Scenario
+### Scenario:
 Consider a **Phone Contact List** where each contact is identified by a unique **Name**.
 * **New contact added** → Insert into BST
 * **Scrolling through A-Z** → Inorder traversal
 * **Deleting a contact** → Delete operation
 A Binary Search Tree (BST) is used to ensure names are found instantly without checking every single entry in the phonebook.
 
-### Justification
+### Justification:
 Binary Search Tree is chosen because:
 * It maintains **alphabetical order** automatically.
 * Allows **fast searching**, as it narrows down names by half at every step.
@@ -16,7 +16,7 @@ Binary Search Tree is chosen because:
     * **Inorder** → Contacts displayed from A to Z.
     * **Preorder/Postorder** → Used for system backups and data structure analysis.
 
-### Algorithm
+### Algorithm:
 
 **1. Insertion**
 * Create a new contact node.
@@ -49,14 +49,15 @@ Binary Search Tree is chosen because:
     * **One child** → replace with the child contact.
     * **Two children** → replace with the inorder successor (the next name alphabetically).
 
-###  Time Complexity
+###  Time Complexity:
 
-| Operation | Average Case | Worst Case |
-| :--- | :--- | :--- |
-| **Insertion** | $O(\log n)$ | $O(n)$ |
-| **Deletion** | $O(\log n)$ | $O(n)$ |
-| **Searching** | $O(\log n)$ | $O(n)$ |
-| **Traversals** | $O(n)$ | $O(n)$ |
-
+| Operation | Time Complexity |
+|-----------|-----------------|
+| Insert    | O(log n)        |
+| Delete    | O(log n)        |
+| Search    | O(log n)        |
+| Inorder   | O(n)            |
+| Preorder  | O(n)            |
+| Postorder | O(n)            |
 ### Code
 (Refer to BST-application.c uploaded in repository)
